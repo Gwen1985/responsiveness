@@ -1,0 +1,48 @@
+body {
+	background-color: #4f8a8b;
+	font-family: 'Signika', sans-serif;
+	font-size: 16px;
+	color: orange;
+}
+#small, #medium, #large {
+		float: left;
+		width: 25%;
+		padding: 25px 25px 25px 55px;
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		background-color: #96bb7c;
+		color: white;
+	}
+
+	#small, #medium, #large {
+		float: left;
+		padding: 25px 50px 25px 55px;
+	}
+
+	#small {
+		width: 50% ;
+	}
+
+	#medium {
+		width: 200px ;
+	}
+
+	#large {
+		width: auto ;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		background-color: #f40552;
+		color: black;
+	}
+
+	#small, #medium, #large {
+		float: left;
+		padding: 5px 5px 5px 25px;
+		width: auto;
+	}
+}
